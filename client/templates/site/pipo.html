@@ -1,0 +1,13 @@
+<template name="pipo">
+  <div class="container">
+    <header class="navbar navbar-default" role="navigation"> 
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
+      </div>
+    </header>
+    <div id="main">
+      <h1>This is PIPO</h1>
+      {{> yield}}
+    </div>
+  </div>
+</template>
