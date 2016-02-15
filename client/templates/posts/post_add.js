@@ -8,8 +8,7 @@ Template.postAdd.events({
 		Meteor.call('postAdd',post,function(error,result){
 			if(error) return alert(error.reason);
 			if(result.postExists) alert('This link has been already posted.');
-			//Router.go('postPage',{_id:result._id});
+			Router.go('postPage',{_id:result._id});
 		});
-		Router.go('postsList');
 	}
 });
